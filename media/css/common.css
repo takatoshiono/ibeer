@@ -1,0 +1,438 @@
+body {
+    text-align: center;
+    margin: 0 10px;
+    background: url("../images/bg_strip.png") repeat;
+}
+
+div#top,
+div#header,
+div#content,
+div#footer {
+    margin: auto;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   TOP
+-------------------------------------------------------------------------- */
+
+div#top {
+    width: 100%;;
+    text-align: center;
+}
+
+    div#topMenu:after {
+        height: 0;
+        visibility: hidden;
+        content: ".";
+        display: block;
+        clear: both;
+    }
+    
+        ul#topNavi {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            width: auto;
+            top: 0;
+            right: 0;
+        }
+
+        ul#topNavi li {
+            margin: 0 0 1px 0;
+            padding: 0;
+            float: left;
+            width: 80px;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        ul#topNavi li a {
+            color: #a9ca45;
+            text-decoration: none;
+        }
+
+        ul#topNavi li a:hover {
+            text-decoration: underline;
+        }
+
+/* --------------------------------------------------------------------------
+   Header
+-------------------------------------------------------------------------- */
+
+div#header {
+    margin-bottom: 10px;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #dd0505;
+    border-left: 1px solid #aaa;
+    width: 100%;
+}
+
+    div#header h1 {
+        margin-left: 5px;
+    }
+
+    ul#headerNavi {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul#headerNavi:after {
+        height: 0;
+        visibility: hidden;
+        content: ".";
+        display: block;
+        clear: both;
+    }
+    
+    ul#headerNavi li {
+        margin: 0 0 0 0;
+        padding: 0;
+        float: left;
+        width: 90px;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    ul#headerNavi li a {
+        margin-right: 5px;
+        border-bottom: 5px solid #dd0505;
+        padding: 2px 0 0 0;
+        display: block;
+        position: relative;
+        color: #fff;
+        background-color: #ee2121;
+        font-family: Tahoma, sans-serif;
+        font-size: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    ul#headerNavi li a:hover {
+        background-color: #dd0505;
+    }
+
+/* --------------------------------------------------------------------------
+   CONTENT
+-------------------------------------------------------------------------- */
+
+div#content {
+    border: 1px solid #aaa;
+    width: 100%;
+}
+
+div#content:after {
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+
+    div#main {
+        margin-right: -360px;
+        padding: 0 5px;
+        float: left;
+        width: 100%;
+    }
+
+    div #sidebar {
+        float: left;
+        width: 340px;
+        padding: 0 5px;
+    }
+
+    div#main div {
+        margin-right: 360px;
+    }
+
+    div#main div div {
+        margin-right: 0;
+    }
+
+    div#shopList {
+        width: 100%;
+    }
+
+    div#shopList table {
+    }
+
+    div#pageNaviFooter {
+        text-align: center;
+    }
+
+    div#pageNaviFooter span.pagePrev,
+    div#pageNaviFooter span.pageCurrent,
+    div#pageNaviFooter span.page,
+    div#pageNaviFooter span.pageNext {
+        margin: 0 2px;
+    }
+
+/* --------------------------------------------------------------------------
+   FOOTER
+-------------------------------------------------------------------------- */
+
+div#footer {
+    font-size: 92%;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    padding: 1px 0;
+}
+
+    div#footer ul#siteInfo {
+        margin: 0;
+        text-align: center;
+    }
+    
+    div#footer ul#siteInfo li {
+        margin: 0 1em;
+        display: inline;
+    }
+    
+    div#footer address {
+        color: #000;
+        text-align: center;
+    }
+
+/* --------------------------------------------------------------------------
+   Text Module
+-------------------------------------------------------------------------- */
+
+h1 {
+    font-size: 144%;
+}
+
+h2 {
+    font-size: 122%;
+    margin: 15px 5px 10px 5px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 0 5px;
+    background-color: #eee;
+}
+
+h3 {
+    font-size: 107%;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 107%;
+}
+
+h5 {
+    font-size: 107%;
+}
+
+h6 {
+    font-size: 107%;
+}
+
+div.text,
+div.warn,
+div.guide {
+    margin: 10px;
+}
+
+div.warn {
+    color: #f00;
+}
+
+/* --------------------------------------------------------------------------
+   FORM MODULE
+-------------------------------------------------------------------------- */
+
+form.inline {
+    display: inline;
+}
+
+form label {
+    font-size: 122%;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    color: #666;
+    display: block;
+}
+
+form input {
+    width: auto;
+    font-size: 197%;
+}
+
+form input.submit {
+    width: auto;
+    font-size: 122%;
+    margin-top: 10px;
+    padding: 3px 6px;
+}
+
+form.inline input.submit {
+    font-size: 100%;
+    padding: 0;
+}
+
+div.submitForm {
+    margin: 10px 5px;
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Memo
+-------------------------------------------------------------------------- */
+
+div#memo div.memoEntry {
+    margin: 0 10px;
+}
+
+div#memo h3 {
+    color: #195e04;
+    font-size: 114%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+div#memo div.memoBody {
+    margin: 0 10px;
+}
+
+div#memo span.memoImg {
+}
+
+div#memo div.memoFooter {
+    text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   REGISTRATION
+-------------------------------------------------------------------------- */
+
+div#registrationGuide {
+    margin: 10px;
+}
+
+div.error {
+    width: 580px;
+}
+
+div#registrationForm {
+    margin: 5px 20px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    width: 600px;
+}
+
+    div#registrationForm table {
+        border: none;
+        background-color: #fff;
+    }
+    
+    div#registrationForm th,
+    div#registrationForm td {
+        background-color: #fff;
+    }
+    
+    div#registrationForm th {
+        background-color: #6ea806;
+    }
+    
+    div#registrationForm td {
+        border: none;
+    }
+    
+    div#registrationForm form label {
+        color: #fff;
+    }
+
+/* --------------------------------------------------------------------------
+   LOGIN
+-------------------------------------------------------------------------- */
+
+div#login {
+    width: 600px;
+}
+
+/* --------------------------------------------------------------------------
+   MEMO
+-------------------------------------------------------------------------- */
+
+div#memoForm {
+    margin: 10px;
+    padding: 15px 20px;
+    border: 1px solid #aaa;
+    width: 600px;
+}
+
+div#memoForm form textarea {
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   MAP
+-------------------------------------------------------------------------- */
+
+div#mapCanvas {
+    width: auto;
+    height: 420px;
+    margin: 0 5px;
+}
+
+div#smallMapCanvas {
+    width: 400px;
+    height: 200px;
+    margin: 0 5px;
+}
+
+div#mapSearch {
+    text-align: right;
+}
+
+div#mapSearch form input {
+    width: auto;
+    font-size: 100%;;
+}
+
+div#mapSearch form input.submit {
+    width: auto;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   ADS
+-------------------------------------------------------------------------- */
+
+div.ads {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   tinmatter
+-------------------------------------------------------------------------- */
+
+div#tinmatterTimeline {
+    margin: 10px;
+}
+
+div.tinmatterStatus {
+    font-size: 122%;
+}
+
+div.tinmatterStatus .screen_name {
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   openid_consumer
+-------------------------------------------------------------------------- */
+
+input#openid_url {
+    text-indent: 32px;
+    background-image: url("/media/images/openid_med_logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+

@@ -1,0 +1,34 @@
+application: ibeer
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+    - url: /media
+      static_dir: media
+
+    - url: /
+      script: handlers/index.py
+
+    - url: /status/.+
+      script: handlers/status.py
+      login: required
+
+    - url: /statuses/.*
+      script: handlers/statuses.py
+      login: required
+
+    - url: /test/load/status
+      script: handlers/test/load/status.py
+      login: admin
+
+    - url: /test/load/total_amount
+      script: handlers/test/load/total_amount.py
+      login: admin
+
+    #- url: /
+    #  script: handlers/maintenance.py
+    #- url: /calc_total_amount
+    #  script: handlers/calc_total_amount.py
+    #  login: admin
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>ibeer - {{ status.user.nickname|escape }}: {{ status.status|escape }}</title>
+    <link rel="stylesheet" type="text/css" href="/media/css/import.css" media="screen" />
+</head>
+<body>
+
+<div id="content">
+    <div id="status">{{ status.status|escape }}</div>
+    <div id="time">{{ status.updated_at|date:"h:i A M d, Y O" }}</div>
+    <div id="user">{{ status.user.nickname|escape }}</div>
+</div>
+
+</body>
+</html>
+
