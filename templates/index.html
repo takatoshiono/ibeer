@@ -58,10 +58,10 @@
     {% if is_paginated %}
     <div id="paginate">
         {% if has_previous %}
-        <a href="/?page={{ previous_page }}">&#171; Newer</a>
+        <a id="newer" href="/?page={{ previous_page }}">&#171; Newer</a>
         {% endif %}
         {% if has_next %}
-        <a href="/?page={{ next_page }}">Older &#187;</a>
+        <a id="older" href="/?page={{ next_page }}">Older &#187;</a>
         {% endif %}
     </div>
     {% endif %}
