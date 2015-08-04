@@ -1,0 +1,7 @@
+indexes:
+
+- kind: Status
+  properties:
+  - name: user
+  - name: updated_at
+    direction: desc

@@ -2,7 +2,6 @@ syntax: glob
 
 .hg
 .hgignore
-index.yaml
 *.pyc
 .*.swp
 tools
