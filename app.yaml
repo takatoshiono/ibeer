@@ -1,4 +1,4 @@
-application: ibeer
+application: ibeer-1027
 version: 1
 runtime: python
 api_version: 1
